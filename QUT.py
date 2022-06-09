@@ -46,7 +46,7 @@ def main(): # define main function
         quit()
     else:
         while True:
-            if str(time.strftime("%H:%M")) == "11:59": # Check if the time is 11:59 pm
+            if str(time.strftime("%H:%M")) == "23:59": # Check if the time is 11:59 pm
                 temps = []
                 times = []
                 average_temps = []
@@ -138,7 +138,7 @@ def main(): # define main function
                 f.write(current_time + ", " + str(tempC) + "\n")
             f.close()
                     # Wait 1 minute before recording again
-            time.sleep(60)
+            time.sleep(60)  
         
     
 
